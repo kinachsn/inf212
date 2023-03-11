@@ -6,7 +6,7 @@
  *		Email: h.kinac2021@gtu.edu.tr
  */
 
-int func1(int number)
+unsigned long long func1(int number)
 {
     if (number == 0)
         return 1;

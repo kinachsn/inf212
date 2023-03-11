@@ -7,7 +7,7 @@
  */
 #include <stdio.h>
 
-int func1(int);
+unsigned long long func1(int);
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
 	    printf("\nSomething went wrong !");
 
 	else
-		printf("\nFactorial of %d = %d",number,func1(number));
+		printf("\nFactorial of %d = %lld",number,func1(number));
 
 	return 0;
 }
