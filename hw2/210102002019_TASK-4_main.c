@@ -23,3 +23,12 @@ int main()
 
 	return 0;
 }
+
+unsigned long long func1(int number)
+{
+    if (number == 0)
+        return 1;
+    
+    else
+        return number * func1(number - 1);
+}
