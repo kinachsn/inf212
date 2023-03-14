@@ -6,28 +6,19 @@
  *		Email: h.kinac2021@gtu.edu.tr
  */
 
-#include <stdio.h>
+#include<stdio.h>
 
-int main()
-{
-	int number;
+int main(){
+    
+    int number;
+       
+    printf("Enter the number : ");
+    scanf("%d", &number);
 
-	printf("Type a number : ");
-	
-	if (!(scanf("%d",&number)))
-	
-	printf("Something went wrong !");
-	    
-	else{
-	    
-	printf("\nMultiplication table of %d\n\n",number);
-	
-	if(number == 0)
-	    printf("0");
-	    
-	for(int i = 1; i <= number;i++){
-		if(number % i == 0)
-			printf("%d x %d = %d\n",i,number/i,number);
-	}}
-	return 0;
-}
+    printf("Multiplication table of %d:\n", number);
+
+    for (int i = 0; i <= 29; i++)
+            printf("%d x %d = %d\n", number, i, number * i);
+        
+ 	return 0;
+ }
