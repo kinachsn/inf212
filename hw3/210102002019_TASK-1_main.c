@@ -25,5 +25,6 @@ int main(){
 	}
 
 	printf("the average of elements in float array : %f",sum / ARRAY_SIZE);
+	return 0;
 }
 
